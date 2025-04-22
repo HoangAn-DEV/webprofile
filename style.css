@@ -1,0 +1,215 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000000;
+    color: #fff;    
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+header {
+    background-color: #353535;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-image:url('aaa.jpg');
+    flex-wrap: wrap;
+}
+
+.hero .text {
+    max-width: 600px;
+}
+
+.hero .welcome {
+    color: #facc15;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero .highlight {
+    color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.hero .hero-img img {
+    width: 400px;
+    border-radius: 30px;
+}
+
+.about {
+    display: flex;
+    padding: 60px 10%;
+    background-image: url('shore3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    position: relative; 
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.about-left, .about-right {
+    position: relative;
+    z-index: 2; 
+}
+
+.about-left {
+    flex: 1;
+    padding-right: 40px;
+    min-width: 300px;
+}
+
+.about-left img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-left ul {
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.about-right {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-right h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-right ul {
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.bar {
+    width: 100%;
+    background-color: #333;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.bar .fill {
+    height: 100%;
+    background-color: #ff2d92;
+    border-radius: 5px;
+    
+}
+.social-icon {
+    width: 50px; 
+    height: auto; 
+    margin: 0 10px; 
+    vertical-align: middle; 
+    transition: transform 0.3s ease; 
+    border-radius: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}
+.hero-img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.profile1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.skills:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.about-right:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.text:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.mxh {
+    color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.thongtin {
+ color: #facc15;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.vetao {
+    color: rgb(255, 216, 137);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
