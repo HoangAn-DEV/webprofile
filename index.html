@@ -9,17 +9,37 @@
 <body>
     <header>
         <nav>
+            <div class="audio-player-container">
+                <div class="fancy-audio">
+                    <button id="playPauseBtn">🎵 Play</button>
+                    <audio id="myAudio" autoplay loop>
+                      <source src="ost.mp3" type="audio/mpeg">
+                    </audio>
+                    <script>
+                        const audio = document.getElementById("myAudio");
+                        const btn = document.getElementById("playPauseBtn");
+                        btn.onclick = () => {
+                          if (audio.paused) {
+                            audio.play();
+                            btn.textContent = "⏸ Pause";
+                          } else {
+                            audio.pause();
+                            btn.textContent = "🎵 Play";
+                          }
+                        };
+                      </script>              
+                  </div>
+              </div>
             <div class="logo">KHÔNG BÍT LÀM GÌ</div>
             <ul>
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Về tôi</a></li>
                 <li><a href="#">Kinh nghiệm</a></li>
                 <li><a href="#">Onlyfans</a></li>
-                <li><a href="#">Giá 1 đêm</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <section class="hero">
         <div class="text">
             <div class="welcome">CHÀO MỪNG ĐẾN VỚI PROFILE CỦA TAO</div>

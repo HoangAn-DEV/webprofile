@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    background-color: #353535;
-    padding: 20px;
-    border-bottom: 2px solid #333;
+    background-color: #006b72;
+    padding: 1px;
+    border-bottom: 2px solid #00adba;
 }
 
 nav {
@@ -86,7 +86,7 @@ nav a:hover {
     margin: 10px 0;
 }
 .hero .hero-img img {
-    width: 400px;
+    width: 200px;
     border-radius: 30px;
 }
 
@@ -213,3 +213,31 @@ nav a:hover {
     color: rgb(255, 216, 137);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
+.fancy-audio {
+    background: linear-gradient(to right, #a3eaff, #d4faff);
+    border-radius: 10px;
+    padding: 5px 10px; 
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15); 
+    opacity: 0.5;
+}
+
+#playPauseBtn {
+    background-color: #58c6f2;
+    border: none;
+    color: white;
+    padding: 6px 12px; 
+    font-size: 14px; 
+    font-family: 'Comic Sans MS', cursive;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#playPauseBtn:hover {
+    background-color: #47b0db;
+}
+
+  
+  
