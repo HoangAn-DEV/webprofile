@@ -2,25 +2,32 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #fff;    
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 header {
-    background-color: #006b72;
-    padding: 10px;
+    background-color: rgba(0, 107, 114, 0.6); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0.1px;
     border-bottom: 2px solid #00adba;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
-    padding: 10px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
@@ -29,7 +36,6 @@ nav ul {
     gap: 20px;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 nav a {
@@ -40,6 +46,7 @@ nav a {
 
 nav a:hover {
     color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .hero {
@@ -47,7 +54,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 60px 10%;
-    background-image: url('aaa.jpg');
+    background-image:url('aaa.jpg');
     flex-wrap: wrap;
 }
 
@@ -57,8 +64,10 @@ nav a:hover {
 
 .hero .welcome {
     color: #facc15;
+    letter-spacing: 1px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .hero h1 {
@@ -68,13 +77,19 @@ nav a:hover {
 
 .hero h2 {
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .hero .highlight {
     color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.hero-img img {
+.hero p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.hero .hero-img img {
     width: 200px;
     border-radius: 30px;
 }
@@ -85,26 +100,30 @@ nav a:hover {
     background-image: url('shore3.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     flex-wrap: wrap;
-    position: relative;
+    position: relative; 
 }
 
 .about::before {
     content: '';
     position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
 .about-left, .about-right {
     position: relative;
-    z-index: 2;
-    padding: 20px;
+    z-index: 2; 
 }
 
 .about-left {
     flex: 1;
+    padding-right: 40px;
     min-width: 300px;
 }
 
@@ -114,9 +133,9 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.about-left ul, .about-right ul {
+.about-left ul {
+    padding-left: 0;
     list-style: none;
-    padding: 0;
     line-height: 1.8;
 }
 
@@ -125,12 +144,23 @@ nav a:hover {
     min-width: 300px;
 }
 
+.about-right h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-right ul {
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
 .skills {
     margin-top: 20px;
 }
 
 .bar {
-    width: 100%;
+    width: 90%;
     background-color: #333;
     height: 10px;
     border-radius: 5px;
@@ -141,28 +171,59 @@ nav a:hover {
     height: 100%;
     background-color: #ff2d92;
     border-radius: 5px;
-    transition: width 0.8s ease;
+    
 }
-
 .social-icon {
-    width: 50px;
-    height: auto;
-    margin: 0 10px;
-    vertical-align: middle;
+    width: 50px; 
+    height: auto; 
+    margin: 0 10px; 
+    vertical-align: middle; 
+    transition: transform 0.3s ease; 
     border-radius: 40px;
-    transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
-
+.hero-img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.profile1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.skills:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.about-right:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.text:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.mxh {
+    color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.thongtin {
+ color: #facc15;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.vetao {
+    color: rgb(255, 216, 137);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
 .fancy-audio {
     background: linear-gradient(to right, #a3eaff, #d4faff);
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 10px; 
     width: fit-content;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15); 
     opacity: 0.5;
 }
 
@@ -170,10 +231,10 @@ nav a:hover {
     background-color: #58c6f2;
     border: none;
     color: white;
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 6px 12px; 
+    font-size: 14px; 
     font-family: 'Comic Sans MS', cursive;
-    border-radius: 8px;
+    border-radius: 8px; 
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -181,61 +242,39 @@ nav a:hover {
 #playPauseBtn:hover {
     background-color: #47b0db;
 }
+.tieude ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
 
-.mxh, .thongtin {
+.tieude ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.tieude ul li a:hover {
     color: #facc15;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
-
-.vetao {
-    color: rgb(255, 216, 137);
-}
-
-.social-links {
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    nav {
+@media (max-width: 600px) {
+    .tieude ul {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
 
-    .hero {
-        flex-direction: column;
-        padding: 30px 5%;
-        text-align: center;
-    }
-
-    .hero-img img {
-        width: 80%;
-        max-width: 250px;
-        margin-top: 20px;
-    }
-
-    .about {
-        flex-direction: column;
-        padding: 30px 5%;
-    }
-
-    .about-left, .about-right {
-        width: 100%;
-    }
-
-    .social-icon {
-        width: 40px;
-        margin: 5px;
-    }
-
-    .text:hover,
-    .hero-img:hover,
-    .skills:hover,
-    .about-right:hover,
-    .profile1:hover {
-        transform: none;
+    .tieude ul li a {
+        font-size: 16px;
+        padding: 6px 10px;
     }
 }
+
